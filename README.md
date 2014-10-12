@@ -1,6 +1,8 @@
 Enterprise
 ==========
 
+MODIFICAITONS 21 = 
+
 -I wrote a script to start up both the mtu.c and whichever of the 3 attacks I'm using. it's in the scripts folder as attack.sh
 
 -I modified the mtu.c code so that it doesn't wait on a tcp response. Just grabs the serial data and converts/sends tcp data. I don't want a tcp RST packet to cause the converter to fail. Cause it did.
@@ -9,7 +11,7 @@ Enterprise
 
 -I think I'm gonna reincorporate the master PLC so I can try to have multiple slaves. Let's see. But I'm pretty sure the master is only a MODBUS client, not a MODBUS server. Gotta fix that first. This may mean rearchitecting Brad's whole system. Poopoo.
 
--Looks like the tcptank config also had to be modified. I don't know why, but he has his memory model as "control_microsystems" but all his addresses are for "control_microsystems_old". I changed it to "old" as well as the IP address to 10.128.0.1
+-Looks like the tcptank config also had to be modified. I don't know why, but Bill has his memory model as control_micro_systems but all his addresses are for "control_old". I changed it to "old" as well as the IP address to 10.128.0.1
 
 -yeah, the tcptank is a really simple simulation. Like stupid, unusable, simple. I wonder if that's for the big tanks in the SCADA lab.
 
